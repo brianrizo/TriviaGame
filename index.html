@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lan='en'>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basketball Trivia</title>
+	<!-- My CSS Stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- JQuery CDN -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="box">
+
+	<p>Basketball Trivia</p>
+	<!--Timer countdown-->
+<div class="main">	
+	<div class="timeLeft"> <h3><span id="count"></span> shot clock</h3></div>
+	<br>
+	
+		<h3 id="question"></h3>
+		<h3 id="resultView"></h3>
+		<h3 id="answers"></h3>
+		<h3 id="message"></h3>
+	
+	
+	<!--Buttons-->
+	<button type="button" id="startClock" class="btn btn-success btn-lg gameStart">Start Game</button>
+
+	<br>
+	
+	<!--End Game-->
+	<div class="endGame">
+	<button type="button" id="playAgain" class="btn btn-primary btn-lg playAgain">Play Again</button>
+	<h2> Your Results:</h2>
+	<h2 id="correctGuesses">Correctly Answered: </h2>
+	<h2 id="incorrectGuesses">Incorrectly Answered: </h2>
+	<h2>Out of 6 Questions!</h2>
+	</div>
+	
+	
+	</div>
+</div>	
+</div> <!--End containter-->
+
+
+<script src="assets/javascript/app.js"></script>	
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/jordan.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  
+    
+}
+
+.container {
+	text-align: center;
+	color: black;
+	font-family: 'Georgia';
+	text-shadow: 1px 1px 1px #000; 
+
+}
+
+.main {
+  	background:rgba(250,250,250,0.6);
+  	border-radius: 70px;
+
+}
+
+
+p {
+	padding-top: 50px;
+	font-size: 80px;
+	font-family: 'Georgia';
+	color: orange;
+}
+button {
+	text-shadow: 3px 3px 3px #000;
+
+}
+.box{
+	margin: 25px 100px 0px 100px;
+	padding: 5px;
+
+}
+
+#count {
+	color: red;
+}
+
+#correctGuesses {
+	color: green;
+}
+
+#incorrectGuesses {
+	color: red;
+}
+
+li {
+	list-style: none;
+}
+
+li:hover{
+	background-color: orange;
+	width: 35%;
+	display: inline-block;
+	cursor: pointer;
+
