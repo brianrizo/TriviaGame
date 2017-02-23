@@ -46,10 +46,11 @@ console.log(quiz[0].correctAnswer);
 			if (index === quiz.length) {
 				stop();
 				results();
+				resetGame();
 			}else{
-			question.show();
+			$("#message").hide();
 			timer = setInterval(startTimer, 1000);
-			$("#message").html("");
+			$("#answers").html("");
 			question.html(quiz[index].question);
 			for (i = 0; i < quiz[index].answers.length; i++) {
     		// var answers = quiz[index].answers[i];
@@ -93,56 +94,51 @@ console.log(quiz[0].correctAnswer);
 
 	function results(){	
 			$("#question").hide();
-			$("#startGame").hide();
 			$(".timeLeft").hide();
 			$(".endGame").show();
+			$("#answers").hide();
 			$("#message").hide();
-			$('#correctGuesses').append(correctAnswers);
-			$('#incorrectGuesses').append(incorrectAnswers);
+			$('.correct').html(correctAnswers);
+			$('.incorrect').html(incorrectAnswers);
 			$(".playAgain").show();
 	}// results
 
 	function startTimer(){
 		    counter--;
-	      	span = document.getElementById("count");
-	      	span.innerHTML = counter;
+	      	$(".count").html(counter);
 	    	if (counter === 0) {
-	        alert('Shot Clock Violation!');
-	        stop();
-	        $("#answers").empty();
-	        results();
-	     
-
+	        	alert('Shot Clock Violation!');
+	        	stop();
+	        	results();
+	        	resetGame();
 	    }
 	  
 	} //start timer 
 
 
-
-//start game
-
-// on clicks
+// on-clicks
 
 // start game
 	$("#startGame").click(function(){
     	startTimer();
     	viewquestions();
-    	$(".timeLeft").show();
-    // $("#startGame").hide(); 
+    	$(".timeLeft").show(); 
     
  });
 // reset game
-// function resetGame(){
+function resetGame(){
 	$(".playAgain").click(function(){
 		$(".endGame").hide();
 		correctAnswers = 0;
 		incorrectAnswers = 0;
 		counter = 25;
-		startTimer();
+		index = 0;
+		question.show();
+		$("#answers").show();
 		viewquestions();
 		$(".timeLeft").show();
 	
 
 });
-// };
+};
 

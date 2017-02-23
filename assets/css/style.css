@@ -8,7 +8,7 @@ body {
     
 }
 #startGame {
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 
 .container {
@@ -43,8 +43,9 @@ button {
 
 }
 
-#count {
+.count {
 	color: red;
+	
 }
 
 #correctGuesses {
