@@ -94,7 +94,7 @@ console.log(quiz[0].correctAnswer);
 	function results(){	
 			$("#question").hide();
 			$("#submitResult").hide();
-			$("#startClock").hide();
+			$("#startGame").hide();
 			$(".timeLeft").hide();
 			$(".endGame").show();
 			$("#message").hide();
@@ -125,11 +125,11 @@ console.log(quiz[0].correctAnswer);
 // on clicks
 
 // start game
-$("#startClock").click(function(){
+$("#startGame").click(function(){
     startTimer();
     viewquestions();
     $(".timeLeft").show();
-    // $("#startClock").hide();
+    // $("#startGame").hide();
     // $("#submitResult").show();
  });
 // reset game
