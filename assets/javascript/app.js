@@ -1,6 +1,5 @@
 // hides end game text & button $(document).ready(function(){
 	$(".endGame").hide();
-	$("#submitResult").hide();
 	$(".timeLeft").hide();
 
 
@@ -9,7 +8,7 @@ var	quiz= [
 	answers:["Michael Jordan", "Kobe Bryant", "Lebron James", "Wilt Chamberlin"],
 	correctAnswer: "Michael Jordan"},
 
-	{question:"Which of the following jersey numbers did Michael Jordan never wear?",
+	{question:"Which of the following jersey numbers did Michael Jordan NEVER wear?",
 	answers:["23", "45", "12", "33"],
 	correctAnswer: "33"}, 
 
@@ -29,7 +28,8 @@ var	quiz= [
 	answers: ["72", "82", "78", "90"],
 	correctAnswer: "82"} 
   
-];	
+];
+
 // global variables
 var counter = 25;
 var correctAnswers = 0;
@@ -54,7 +54,7 @@ console.log(quiz[0].correctAnswer);
 			for (i = 0; i < quiz[index].answers.length; i++) {
     		// var answers = quiz[index].answers[i];
     		$('#answers').append("<li>" + quiz[index].answers[i] + "</li>"); 
-       		}
+      		}
        		$("button").hide();
        		checkAnswers();
        	}
@@ -93,7 +93,6 @@ console.log(quiz[0].correctAnswer);
 
 	function results(){	
 			$("#question").hide();
-			$("#submitResult").hide();
 			$("#startGame").hide();
 			$(".timeLeft").hide();
 			$(".endGame").show();
@@ -104,7 +103,6 @@ console.log(quiz[0].correctAnswer);
 	}// results
 
 	function startTimer(){
-		  	// timer= setInterval(function() {
 		    counter--;
 	      	span = document.getElementById("count");
 	      	span.innerHTML = counter;
@@ -113,35 +111,38 @@ console.log(quiz[0].correctAnswer);
 	        stop();
 	        $("#answers").empty();
 	        results();
-	        resetGame();
+	     
 
 	    }
 	  
 	} //start timer 
 
-//start game
 
+
+//start game
 
 // on clicks
 
 // start game
-$("#startGame").click(function(){
-    startTimer();
-    viewquestions();
-    $(".timeLeft").show();
-    // $("#startGame").hide();
-    // $("#submitResult").show();
+	$("#startGame").click(function(){
+    	startTimer();
+    	viewquestions();
+    	$(".timeLeft").show();
+    // $("#startGame").hide(); 
+    
  });
 // reset game
-function resetGame(){
-$(".playAgain").click(function(){
-	$(".endGame").hide();
-	correctAnswers = 0;
-	incorrectAnswers = 0;
-	counter = 25;
-	startTimer();
-	viewquestions();
-	$(".timeLeft").show();
+// function resetGame(){
+	$(".playAgain").click(function(){
+		$(".endGame").hide();
+		correctAnswers = 0;
+		incorrectAnswers = 0;
+		counter = 25;
+		startTimer();
+		viewquestions();
+		$(".timeLeft").show();
+	
 
-});}
+});
+// };
 

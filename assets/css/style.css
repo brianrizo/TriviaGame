@@ -7,6 +7,9 @@ body {
   
     
 }
+#startGame {
+	margin-bottom: 25px;
+}
 
 .container {
 	text-align: center;
@@ -19,6 +22,7 @@ body {
 .main {
   	background:rgba(250,250,250,0.6);
   	border-radius: 70px;
+
 
 }
 
@@ -57,7 +61,12 @@ li {
 
 li:hover{
 	background-color: orange;
-	width: 35%;
+	width: auto;
 	display: inline-block;
 	cursor: pointer;
+	color: white;
+}
 
+#message {
+	color: blue;
+}
