@@ -11,6 +11,10 @@ body {
 	margin-bottom: 40px;
 }
 
+#playAgain {
+	margin-bottom: 40px;
+}
+
 .container {
 	text-align: center;
 	color: black;
@@ -45,6 +49,12 @@ button {
 
 .count {
 	color: red;
+	background-color: black;
+	border: 3px solid black;
+	border-width: 10px;
+	font-size: 33px;
+	margin-top: 20px;
+
 	
 }
 
@@ -69,5 +79,12 @@ li:hover{
 }
 
 #message {
-	color: blue;
+	color: yellow;
+}
+
+#question {
+	color: white;
+	display: inline;
+	background: blue;
+	
 }

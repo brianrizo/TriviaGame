@@ -34,7 +34,6 @@ var	quiz= [
 var counter = 25;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
-// var unanswered = 0;
 var timer;
 var index = 0;
 var question = $("#question");
