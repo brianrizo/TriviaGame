@@ -18,8 +18,8 @@ body {
 .container {
 	text-align: center;
 	color: black;
-	font-family: 'Georgia';
-	text-shadow: 1px 1px 1px #000; 
+	text-shadow: 1px 1px 1px #000;
+	font-family: 'Philosopher', sans-serif;
 
 }
 
@@ -34,8 +34,10 @@ body {
 p {
 	padding-top: 50px;
 	font-size: 80px;
-	font-family: 'Georgia';
+	font-family: 'VT323', monospace;
 	color: orange;
+	font-size: 100px;
+
 }
 button {
 	text-shadow: 3px 3px 3px #000;
@@ -54,7 +56,7 @@ button {
 	border-width: 10px;
 	font-size: 33px;
 	margin-top: 20px;
-
+	font-family: 'Codystar', cursive;
 	
 }
 
@@ -68,6 +70,8 @@ button {
 
 li {
 	list-style: none;
+	color: black;
+	font-family: 'Philosopher', sans-serif;
 }
 
 li:hover{
@@ -79,12 +83,16 @@ li:hover{
 }
 
 #message {
-	color: yellow;
+	color: orange;
+	font-family: 'VT323', monospace;
+	font-size: 50px;
 }
 
 #question {
 	color: white;
 	display: inline;
-	background: blue;
+	background: steelblue;
+	font-family: 'Philosopher', sans-serif;
+
 	
 }
